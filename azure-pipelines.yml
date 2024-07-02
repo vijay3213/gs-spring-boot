@@ -69,4 +69,4 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              package: '$(System.ArtifactsDirectory)/drop/**/target/*.war'
+              package: $(System.DefaultWorkingDirectory)/drop/**/target/*.war'
